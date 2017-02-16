@@ -1,0 +1,21 @@
+replicaCount: 1
+image: drone/drone
+imageTag: "0.5"
+
+drone:
+  secret:
+
+agent:
+
+server:
+  open: false
+  gitRepository: github
+  gitClient:
+  gitSecret:
+  resources:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
